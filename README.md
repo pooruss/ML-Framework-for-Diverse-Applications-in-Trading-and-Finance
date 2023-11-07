@@ -80,8 +80,39 @@ During running, you need to enter natural language that describe how you would l
 
 ## Results and Evaluation
 
+Common financial problems that can be solved by applying machine learning methods can be categorized into the following five categories: financial fraud detection, customer relationship management, financial forecasting, risk management, investment and asset management. In each class of problems, a suitable dataset as well as a reasonable method was selected for testing and validation, and the results are as follows.
+
+### Financial fraud detection
+
+- Dataset: Credit Card Fraud Detection Dataset 2023
+- Algorithms: k-Nearest Neighbor
+
+The K-nearest neighbors (KNN) algorithm applied to classify credit card fraud dataset achieved an accuracy of 78.9%. With precision values of 74.2% for identifying non-fraudulent transactions and 86.0% for detecting fraudulent transactions, the algorithm demonstrates good performance in accurately predicting both classes. The recall values of 88.9% for non-fraudulent transactions and 68.9% for fraudulent transactions indicate that the algorithm effectively captures a high proportion of both classes. Overall, the KNN algorithm shows promising performance in accurately classifying credit card fraud, with balanced precision and recall values.
+
+### Customer relationship management
+
+- Dataset: Credit Card Customer Churn Prediction
+- Algorithms: Naive Bayes
+
+The Naive Bayes algorithm for predicting customer churn achieved an accuracy of 82.1%, with precision values of 85.1% for non-churned customers and 57.3% for churned customers. However, the recall values were 94.2% for non-churned customers and 32.1% for churned customers, indicating room for improvement in accurately identifying churned customers.
+
+<img src="https://lh7-us.googleusercontent.com/Xu53AatzXsgwPCTT3kf5gd487I20fQ3s91L214T9yRYYqLxcSas2VKoLFoFYUZs63Lc4bI77A0hRGEePMUsn-kb9luRPwkNY5WxX9udLv3UjIi65fwuaAxwIi1SPeFYHeFvT8hhXJRfmhfcpvVvSGVtHcQ=s2048" alt="img" style="zoom:50%;" />
+
+### Financial forecasting
+
+- Dataset: Stock Price of Netflix
+- Algorithms: SVM
+
+Given history volumns, predict if a stock’s open price is higher or lower than the close price. The label is 0 if the close price is higher than the open price, and is 1 if the open price is higher than the close price. Predictions were 56% accurate. However, all predictions are label 1, might be overfitted.
+
+<img src="https://lh7-us.googleusercontent.com/aIZ8Byl5ZxrOup5KeE67L8sVZ7UWxagSSnLr0JK9hcCAqoNRIi4fS6RWxROyUinMr3idm0Wppv9_o6WupyIr4r6OZCZ9PifcV3mrN7thwyBkMhtUx3vpfELMOHbRJ9D5xegcUpivQnYSuI0lUOx2qC_1wg=s2048" alt="img" style="zoom:50%;" />
+
+### Risk management
+
+### Investment and asset management
 
 ## Future Work
+
 * Develop interactive UI
 * Intergrate More algorithms
 * Encapsulate the data preprocessing process to reduce the cost of getting started
