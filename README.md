@@ -109,7 +109,21 @@ Given history volumns, predict if a stock’s open price is higher or lower than
 
 ### Risk management
 
+- Dataset: creditcard_2023
+- Algorithms: Principal Component Analysis(PCA)
+
+The Silhouette Coefficent is 0.1366, indicating that the data after principal component analysis (PCA) has a certain degree of clustering structure.The two principal components together retained approximately 81.44% of the total variance, providing a fairly good dimensional compression of the original data.
+
+<img src="https://lh7-us.googleusercontent.com/d2uUHAD8Qf9lidfzYSzwPislwH9b9BHzJrTIZnwOuER_TGR_XX5J3PzUT-xjGce8LAyYI53TSE-7YnT6IfG_aWrUDRprBVnrwUIb238j4Ar-NrvEIXoddLN4AcsvqmS4IADWfvdgWYcL99Zv8qlxZc3Vmw=s2048" alt="img" style="zoom:70%;" />
+
 ### Investment and asset management
+
+- Dataset: boston_house_prices
+- Algorithms: Linear Regression
+
+This output provides a prediction model based on this dataset.Meanwhile, it gives 4 evaluation function.Mse=54.39 MAE=4.97 RMSE=7.37 R2=0.18. These four evaluation functions indicate that the predicted results are very close to real data, and the model performs well.
+
+<img src="https://lh7-us.googleusercontent.com/PaKMApXJinlQcEECLxAiILf-PTzc3UjaFPX2D9CdaUsqtiNTtZa7QRbF1tEAm5-qx8QM2pi7dBAipDYKHtKzNRhw1WTlTHYS7xxopfyC4DxXSpySnOtg2DYEgIF77lLBR_-M6arcJli1PqZ9XG4TvJT8Lg=s2048" alt="img" style="zoom:50%;" />
 
 ## Future Work
 
