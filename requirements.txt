@@ -1,0 +1,4 @@
+colorama
+openai
+pandas
+numpy
