@@ -25,27 +25,23 @@ Machine learning needs in the **finance** field: Machine learning algorithms can
 - Decision Tree, used for classification, can be applied to direct marketing, risk management and so on.
 - ...
 
-## 🎬 Demo
-Here is a demo of using svm on the netflix stock dataset to do finance prediction.
-
-
 
 
 ### Main Content
 ✨Here is an overview of this framework.
 <br>
 <div align="center">
-<img src="assets/overview.jpg" width="400px">
+<img src="assets/overview.jpg" width="600px">
 </div>
 <br>
 
-## Setup
+## 🔧 Setup
 - Install.
 ```bash
 pip install -i requirements.txt
 ```
 
-## Run
+## 🕹️ Run
 - Init weight.
 Create a model config yaml file under `./config/`, which indicate the initial weight name and value of the model. Examples can be found in the existing config directory.
 - Write the bash command under `./scripts/`. Examples can be found in the existing config directory.
@@ -55,7 +51,7 @@ bash scripts/run_svm.sh
 During running, you need to enter natural language that describe how you would like to preprocess the data. After model training, you also need to enter the evaluation metric and the visualization method you would use.
 
 
-## Main File Sturcture
+## 📁 Main File Sturcture
 ```
 ├── main.py
 ├── pipeline.py
@@ -78,7 +74,7 @@ During running, you need to enter natural language that describe how you would l
 │  └── utils.py
 ```
 
-## Results and Evaluation
+## 📊 Results and Evaluation
 
 Common financial problems that can be solved by applying machine learning methods can be categorized into the following five categories: financial fraud detection, customer relationship management, financial forecasting, risk management, investment and asset management. In each class of problems, a suitable dataset as well as a reasonable method was selected for testing and validation, and the results are as follows.
 
@@ -96,7 +92,7 @@ The K-nearest neighbors (KNN) algorithm applied to classify credit card fraud da
 
 The Naive Bayes algorithm for predicting customer churn achieved an accuracy of 82.1%, with precision values of 85.1% for non-churned customers and 57.3% for churned customers. However, the recall values were 94.2% for non-churned customers and 32.1% for churned customers, indicating room for improvement in accurately identifying churned customers.
 
-<img src="https://lh7-us.googleusercontent.com/Xu53AatzXsgwPCTT3kf5gd487I20fQ3s91L214T9yRYYqLxcSas2VKoLFoFYUZs63Lc4bI77A0hRGEePMUsn-kb9luRPwkNY5WxX9udLv3UjIi65fwuaAxwIi1SPeFYHeFvT8hhXJRfmhfcpvVvSGVtHcQ=s2048" alt="img" style="zoom:50%;" />
+<img src="https://lh7-us.googleusercontent.com/Xu53AatzXsgwPCTT3kf5gd487I20fQ3s91L214T9yRYYqLxcSas2VKoLFoFYUZs63Lc4bI77A0hRGEePMUsn-kb9luRPwkNY5WxX9udLv3UjIi65fwuaAxwIi1SPeFYHeFvT8hhXJRfmhfcpvVvSGVtHcQ=s2048" alt="img" style="zoom:30%;" />
 
 ### Financial forecasting
 
@@ -105,7 +101,7 @@ The Naive Bayes algorithm for predicting customer churn achieved an accuracy of 
 
 Given history volumns, predict if a stock’s open price is higher or lower than the close price. The label is 0 if the close price is higher than the open price, and is 1 if the open price is higher than the close price. Predictions were 56% accurate. However, all predictions are label 1, might be overfitted.
 
-<img src="https://lh7-us.googleusercontent.com/aIZ8Byl5ZxrOup5KeE67L8sVZ7UWxagSSnLr0JK9hcCAqoNRIi4fS6RWxROyUinMr3idm0Wppv9_o6WupyIr4r6OZCZ9PifcV3mrN7thwyBkMhtUx3vpfELMOHbRJ9D5xegcUpivQnYSuI0lUOx2qC_1wg=s2048" alt="img" style="zoom:50%;" />
+<img src="https://lh7-us.googleusercontent.com/aIZ8Byl5ZxrOup5KeE67L8sVZ7UWxagSSnLr0JK9hcCAqoNRIi4fS6RWxROyUinMr3idm0Wppv9_o6WupyIr4r6OZCZ9PifcV3mrN7thwyBkMhtUx3vpfELMOHbRJ9D5xegcUpivQnYSuI0lUOx2qC_1wg=s2048" alt="img" style="zoom:30%;" />
 
 ### Risk management
 
@@ -114,7 +110,7 @@ Given history volumns, predict if a stock’s open price is higher or lower than
 
 The Silhouette Coefficent is 0.1366, indicating that the data after principal component analysis (PCA) has a certain degree of clustering structure.The two principal components together retained approximately 81.44% of the total variance, providing a fairly good dimensional compression of the original data.
 
-<img src="https://lh7-us.googleusercontent.com/d2uUHAD8Qf9lidfzYSzwPislwH9b9BHzJrTIZnwOuER_TGR_XX5J3PzUT-xjGce8LAyYI53TSE-7YnT6IfG_aWrUDRprBVnrwUIb238j4Ar-NrvEIXoddLN4AcsvqmS4IADWfvdgWYcL99Zv8qlxZc3Vmw=s2048" alt="img" style="zoom:70%;" />
+<img src="https://lh7-us.googleusercontent.com/d2uUHAD8Qf9lidfzYSzwPislwH9b9BHzJrTIZnwOuER_TGR_XX5J3PzUT-xjGce8LAyYI53TSE-7YnT6IfG_aWrUDRprBVnrwUIb238j4Ar-NrvEIXoddLN4AcsvqmS4IADWfvdgWYcL99Zv8qlxZc3Vmw=s2048" alt="img" style="zoom:30%;" />
 
 ### Investment and asset management
 
@@ -123,7 +119,7 @@ The Silhouette Coefficent is 0.1366, indicating that the data after principal co
 
 This output provides a prediction model based on this dataset.Meanwhile, it gives 4 evaluation function.Mse=54.39 MAE=4.97 RMSE=7.37 R2=0.18. These four evaluation functions indicate that the predicted results are very close to real data, and the model performs well.
 
-<img src="https://lh7-us.googleusercontent.com/PaKMApXJinlQcEECLxAiILf-PTzc3UjaFPX2D9CdaUsqtiNTtZa7QRbF1tEAm5-qx8QM2pi7dBAipDYKHtKzNRhw1WTlTHYS7xxopfyC4DxXSpySnOtg2DYEgIF77lLBR_-M6arcJli1PqZ9XG4TvJT8Lg=s2048" alt="img" style="zoom:50%;" />
+<img src="https://lh7-us.googleusercontent.com/PaKMApXJinlQcEECLxAiILf-PTzc3UjaFPX2D9CdaUsqtiNTtZa7QRbF1tEAm5-qx8QM2pi7dBAipDYKHtKzNRhw1WTlTHYS7xxopfyC4DxXSpySnOtg2DYEgIF77lLBR_-M6arcJli1PqZ9XG4TvJT8Lg=s2048" alt="img" style="zoom:30%;" />
 
 ## Future Work
 
