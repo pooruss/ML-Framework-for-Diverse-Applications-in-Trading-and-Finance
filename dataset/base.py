@@ -13,7 +13,7 @@ init(autoreset=True)
 
 class BaseDataset(ABC):
     """
-    This class handles loading, preprocessing, and splitting of NFLX stock data.
+    This class handles loading, preprocessing, and splitting of a given data.
     """
     def __init__(self, file_path, test_split=0.2, generated_codes_path="./cache/generated_codes.json"):
         self.file_path = file_path
